@@ -1,4 +1,5 @@
 import React from "react";
+import CustomButton from "./CustomButton";
 
 const Hero = () => {
   return (
@@ -11,6 +12,7 @@ const Hero = () => {
           Streamline your car rental experience with ou effortless booking
           process.
         </p>
+        <CustomButton />
       </div>
     </div>
   );
