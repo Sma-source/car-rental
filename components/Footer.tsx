@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { footerLinks } from "@/constants";
 
 const Footer = () => {
   return (
@@ -19,7 +20,13 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="footer__links"></div>
+        <div className="footer__links">
+          {footerLinks.map((link) => (
+            <div key={link.title} className="footer__link">
+              <h3 className="font-bold">{link.title}</h3>
+            </div>
+          ))}
+        </div>
       </div>
     </footer>
   );
