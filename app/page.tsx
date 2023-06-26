@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { Hero, SearchBar } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,7 +10,9 @@ export default function Home() {
           <h1 className="text-4xl">Car Catalogue</h1>
           <p>Explore the cars you might like</p>
         </div>
-        <div className="home__filters"></div>
+        <div className="home__filters">
+          <SearchBar />
+        </div>
       </div>
     </main>
   );
