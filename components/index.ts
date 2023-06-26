@@ -3,5 +3,6 @@ import CustomButton from "./CustomButton";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import SearchBar from "./SearchBar";
+import SearchManufacture from "./SearchManufacture";
 
-export { Hero, CustomButton, Navbar, Footer, SearchBar };
+export { Hero, CustomButton, Navbar, Footer, SearchBar, SearchManufacture };
