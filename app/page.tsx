@@ -1,4 +1,5 @@
 import { Hero, SearchBar, CustomFilter } from "@/components";
+import CarCard from "@/components/CarCard";
 import { fetchCars } from "@/utils";
 import Image from "next/image";
 
