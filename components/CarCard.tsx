@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { CarProps } from "@/types";
+import { calculateCarRent } from "@/utils";
 
 interface CarCardProps {
   car: CarProps;
@@ -10,6 +11,8 @@ interface CarCardProps {
 
 const CarCard = ({ car }: CarCardProps) => {
   const { city_mpg, year, make, model, transmission, drive } = car;
+
+  const carRent = calculateCarRent(city_mpg, year);
   return (
     <div className="car-card group">
       <div className="car-card__content">
